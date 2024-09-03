@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.img{
+  @apply w-5;
+}
+
+.recentEntry{
+  @apply flex items-start gap-2.5 p-2.5 pr-10 rounded-3xl text-third cursor-pointer hover:bg-fourth;
+}
+
+.bottomItem{
+  @apply pr-2.5 cursor-pointer ;
+}
+
+
+.cards {
+  @apply grid gap-3.5 p-5 ;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); 
+}
+
+.card{
+  @apply h-48 p-3.5 bg-second rounded-xl relative cursor-pointer hover:bg-ninth
+}
+
+.card-img{
+  @apply w-9 p-1 absolute bg-white rounded-3xl bottom-2.5 right-2.5
+}
+
+.card-p{
+  @apply text-fifth text-base 
+}
+
+.search-img{
+  @apply w-6 cursor-pointer
+}
